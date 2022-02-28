@@ -1,0 +1,1258 @@
+how_to_setup_firebase_for_ott_video_services
+<div id="page-container">
+  <header id="main-header" data-height-onload="80" data-height-loaded="true" data-fixed-height-onload="80.9922" style="top: 0px;">
+    <div class="container clearfix et_menu_container">
+      <div class="logo_container">
+        <span class="logo_helper"></span>
+        <a href="https://www.wicketlabs.com/">
+          <img src="//m2d8t6y5.stackpathcdn.com/wp-content/uploads/2019/05/wicket-labs-logo-horiz.svg" alt="Wicket Labs" id="logo" data-height-percentage="30" data-actual-width="300" data-actual-height="52.0859">
+        </a>
+      </div>
+      <div id="et-top-navigation" data-height="30" data-fixed-height="30" style="padding-left: 169px;">
+        <nav id="top-menu-nav">
+          <ul id="top-menu" class="nav">
+            <li id="menu-item-29351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29351">
+              <a>Products</a>
+              <ul class="sub-menu">
+                <li id="menu-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182">
+                  <a href="https://www.wicketlabs.com/wicket-scorecard/">Wicket Scorecard</a>
+                </li>
+                <li id="menu-item-29350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29350">
+                  <a href="https://www.wicketlabs.com/wicket-scorecard/third-party-video-distribution-channels/">Video Distribution</a>
+                </li>
+              </ul>
+            </li>
+            <li id="menu-item-29352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29352">
+              <a>About</a>
+              <ul class="sub-menu">
+                <li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183">
+                  <a href="https://www.wicketlabs.com/about-us/">About Us</a>
+                </li>
+                <li id="menu-item-25841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25841">
+                  <a href="https://www.wicketlabs.com/about-us/partners/">Integrations &amp; Partners</a>
+                </li>
+                <li id="menu-item-179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179">
+                  <a href="https://www.wicketlabs.com/about-us/leadership/">Leadership</a>
+                </li>
+                <li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180">
+                  <a href="https://www.wicketlabs.com/about-us/careers/">Join Us | Careers</a>
+                </li>
+                <li id="menu-item-33228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33228">
+                  <a href="https://www.wicketlabs.com/events-cal/">Events</a>
+                </li>
+              </ul>
+            </li>
+            <li id="menu-item-33463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33463">
+              <a href="https://www.wicketlabs.com/resources/">Resources</a>
+              <ul class="sub-menu">
+                <li id="menu-item-33549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33549">
+                  <a href="https://www.wicketlabs.com/resources/#resource-grid|Whitepapers|1">Whitepapers</a>
+                </li>
+                <li id="menu-item-34933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34933">
+                  <a href="https://www.wicketlabs.com/resources/#resource-grid|Expert-Guides|1">Expert Guides</a>
+                </li>
+                <li id="menu-item-33687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33687">
+                  <a href="https://www.wicketlabs.com/resources/#resource-grid|Highlights|1">Highlights</a>
+                </li>
+                <li id="menu-item-33547" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33547">
+                  <a href="https://www.wicketlabs.com/resources/#resource-grid|Case-Studies|1">Case Studies</a>
+                </li>
+                <li id="menu-item-33548" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33548">
+                  <a href="https://www.wicketlabs.com/resources/#resource-grid|Videos|1">Webinars &amp; Videos</a>
+                </li>
+                <li id="menu-item-33688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33688">
+                  <a href="https://www.wicketlabs.com/resources/#resource-grid|Infographics|1">Infographics</a>
+                </li>
+                <li id="menu-item-33457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33457">
+                  <a href="https://www.wicketlabs.com/resources/knowledge-base/">OTT Knowledge Base</a>
+                </li>
+              </ul>
+            </li>
+            <li id="menu-item-535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-535">
+              <a href="https://www.wicketlabs.com/wicket-blog/">Blog</a>
+            </li>
+            <li id="menu-item-221" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-221">
+              <a href="https://insights.wicketlabs.com">Sign In</a>
+            </li>
+            <li id="menu-item-597" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-597">
+              <a href="https://www.wicketlabs.com/contact-us/">
+                <span class="et_pb_more_button et_pb_button">Contact Us</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id="et_top_search">
+          <span id="et_search_icon"></span>
+        </div>
+        <div id="et_mobile_nav_menu">
+          <div class="mobile_nav closed">
+            <span class="select_page">Select Page</span>
+            <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+            <ul id="mobile_menu" class="et_mobile_menu">
+              <li id="menu-item-29351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29351 et_first_mobile_item">
+                <a>Products</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182">
+                    <a href="https://www.wicketlabs.com/wicket-scorecard/">Wicket Scorecard</a>
+                  </li>
+                  <li id="menu-item-29350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29350">
+                    <a href="https://www.wicketlabs.com/wicket-scorecard/third-party-video-distribution-channels/">Video Distribution</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="menu-item-29352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29352">
+                <a>About</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183">
+                    <a href="https://www.wicketlabs.com/about-us/">About Us</a>
+                  </li>
+                  <li id="menu-item-25841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25841">
+                    <a href="https://www.wicketlabs.com/about-us/partners/">Integrations &amp; Partners</a>
+                  </li>
+                  <li id="menu-item-179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179">
+                    <a href="https://www.wicketlabs.com/about-us/leadership/">Leadership</a>
+                  </li>
+                  <li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180">
+                    <a href="https://www.wicketlabs.com/about-us/careers/">Join Us | Careers</a>
+                  </li>
+                  <li id="menu-item-33228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33228">
+                    <a href="https://www.wicketlabs.com/events-cal/">Events</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="menu-item-33463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33463">
+                <a href="https://www.wicketlabs.com/resources/">Resources</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-33549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33549">
+                    <a href="https://www.wicketlabs.com/resources/#resource-grid|Whitepapers|1">Whitepapers</a>
+                  </li>
+                  <li id="menu-item-34933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34933">
+                    <a href="https://www.wicketlabs.com/resources/#resource-grid|Expert-Guides|1">Expert Guides</a>
+                  </li>
+                  <li id="menu-item-33687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33687">
+                    <a href="https://www.wicketlabs.com/resources/#resource-grid|Highlights|1">Highlights</a>
+                  </li>
+                  <li id="menu-item-33547" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33547">
+                    <a href="https://www.wicketlabs.com/resources/#resource-grid|Case-Studies|1">Case Studies</a>
+                  </li>
+                  <li id="menu-item-33548" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33548">
+                    <a href="https://www.wicketlabs.com/resources/#resource-grid|Videos|1">Webinars &amp; Videos</a>
+                  </li>
+                  <li id="menu-item-33688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33688">
+                    <a href="https://www.wicketlabs.com/resources/#resource-grid|Infographics|1">Infographics</a>
+                  </li>
+                  <li id="menu-item-33457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33457">
+                    <a href="https://www.wicketlabs.com/resources/knowledge-base/">OTT Knowledge Base</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="menu-item-535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-535">
+                <a href="https://www.wicketlabs.com/wicket-blog/">Blog</a>
+              </li>
+              <li id="menu-item-221" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-221">
+                <a href="https://insights.wicketlabs.com">Sign In</a>
+              </li>
+              <li id="menu-item-597" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-597">
+                <a href="https://www.wicketlabs.com/contact-us/">
+                  <span class="et_pb_more_button et_pb_button">Contact Us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- #et-top-navigation -->
+    </div>
+    <!-- .container -->
+    <div class="et_search_outer">
+      <div class="container et_search_form_container">
+        <form role="search" method="get" class="et-search-form" action="https://www.wicketlabs.com/">
+          <input type="search" class="et-search-field" placeholder="Search …" value="" name="s" title="Search for:">
+        </form>
+        <span class="et_close_search_field"></span>
+      </div>
+    </div>
+  </header>
+  <!-- #main-header -->
+  <div id="et-main-area">
+    <div id="main-content">
+      <div data-wpfc-original-src="//m2d8t6y5.stackpathcdn.com/wp-content/uploads/2020/01/firebase-ott-hero-1.jpg" class="hero-section" style="background-blend-mode: multiply; background-color: initial; ,linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)); background-position: top center;">
+        <h1 class="entry-title">How to Setup Firebase for OTT Video Services</h1>
+        <p class="post-meta"> by
+          <span class="author vcard">
+            <a href="https://www.wicketlabs.com/wicket-blog/author/ben/" title="Posts by Ben Johnson" rel="author">Ben Johnson</a>
+          </span> |
+          <span class="published">May 22, 2020</span> |
+          <a href="https://www.wicketlabs.com/resources/knowledge-base/category/expert-guides/" rel="category tag">Expert Guides</a>
+        </p>
+      </div>
+      <div class="container">
+        <div id="content-area" class="clearfix">
+          <div id="left-area">
+            <article id="post-33512" class="et_pb_post post-33512 epkb_post_type_1 type-epkb_post_type_1 status-publish has-post-thumbnail hentry epkb_post_type_1_category-expert-guides epkb_post_type_1_tag-business-intelligence epkb_post_type_1_tag-client-services epkb_post_type_1_tag-firebase epkb_post_type_1_tag-google-analytics epkb_post_type_1_tag-integrated-data epkb_post_type_1_tag-svod">
+              <div class="et_post_meta_wrapper"></div>
+              <!-- .et_post_meta_wrapper -->
+              <div class="entry-content">
+                <!-- Article Structure Version 2 Style -->
+                <style>			 /* DESKTOP */ 
+#eckb-article-page-container-v2  {
+width: 100% }#eckb-article-page-container-v2 #eckb-article-body {
+width: 100% }
+/* NO RIGHT SIDEBAR */
+#eckb-article-page-container-v2 #eckb-article-body {
+grid-template-columns: 0% 100% 0 ;
+}
+#eckb-article-page-container-v2 #eckb-article-right-sidebar {
+display:none;
+}
+#eckb-article-page-container-v2 #eckb-article-content {
+grid-column-start: 2;
+grid-column-end: 4;
+}
+/* TABLET */ 
+@media only screen and ( max-width: 1025px ) {#eckb-article-page-container-v2  {
+width: 100% }#eckb-article-page-container-v2 #eckb-article-body {
+width: 100% }
+/* NO RIGHT SIDEBAR */
+#eckb-article-page-container-v2 #eckb-article-body {
+grid-template-columns: 0% 100% 0 ;
+}
+#eckb-article-page-container-v2 #eckb-article-right-sidebar {
+display:none;
+}
+#eckb-article-page-container-v2 #eckb-article-content {
+grid-column-start: 2;
+grid-column-end: 4;
+}
+}
+/* SHARED */
+#eckb-article-page-container-v2 #eckb-article-left-sidebar {
+padding: 10px 10px 10px 10px; ;
+background-color: #ffffff;				margin-top: 0px;			}
+#eckb-article-page-container-v2 #eckb-article-left-sidebar:before {
+height: 0px;			}
+#eckb-article-page-container-v2 #eckb-article-content {
+padding: 20px;;
+background-color: #ffffff;			}
+.eckb-article-content-created-date-container, .eckb-article-content-last-updated-date-container, .eckb-article-content-author-container, .eckb-ach__article-meta__date-created, .eckb-ach__article-meta__author, .eckb-ach__article-meta__date-updated {
+color: #000000;font-size: 12px !important;			}
+#eckb-article-page-container-v2 #eckb-article-right-sidebar {
+padding: 10px 10px 10px 10px;;
+background-color: #ffffff;				margin-top: 0px;			}
+#eckb-article-page-container-v2 #eckb-article-right-sidebar:before {
+height: 0px;			}
+/* MOBILE - Set all columns to full width. */
+@media only screen and ( max-width: 768px ) {
+#eckb-article-page-container-v2 {
+width:100%;
+}
+#eckb-article-page-container-v2 #eckb-article-content {
+grid-column-start: 1;
+grid-column-end: 4;
+}
+#eckb-article-page-container-v2 #eckb-article-left-sidebar {
+grid-column-start: 1;
+grid-column-end: 4;
+}
+#eckb-article-page-container-v2 #eckb-article-right-sidebar {
+grid-column-start: 1;
+grid-column-end: 4;
+}
+#eckb-article-page-container-v2 .eckb-article-toc {
+position: relative;
+float: left;
+width: 100%;
+height: auto;
+top: 0;
+}
+#eckb-article-page-container-v2 #eckb-article-body {
+display: flex;
+flex-direction: column;
+}
+#eckb-article-page-container-v2 #eckb-article-left-sidebar { order: 3; }
+#eckb-article-page-container-v2 #eckb-article-content { order: 2; }
+#eckb-article-page-container-v2 #eckb-article-right-sidebar { order: 1; }
+}
+                </style>
+                <div id="eckb-article-page-container-v2" class=" eckb_ap_active_theme_Divi ">
+                  <div id="eckb-article-header"></div>
+                  <div id="eckb-article-body">
+                    <div id="eckb-article-left-sidebar"></div>
+                    <article id="eckb-article-content" data-article-id="33512">
+                      <div id="eckb-article-content-header">
+                        <div class="eckb-article-title kb-article-id" id="33512"></div>
+                        <div class="eckb-breadcrumb" style="padding-top: 4px; padding-right: 0px; padding-bottom: 4px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 20px; margin-left: 0px; font-size:12px;;">
+                          <nav class="eckb-breadcrumb-outline" aria-label="Breadcrumb">
+                            <ul class="eckb-breadcrumb-nav">
+                              <li style="font-size:12px;;">
+                                <span class="eckb-breadcrumb-link">
+                                  <a tabindex="0" href="https://www.wicketlabs.com/resources/knowledge-base/">
+                                    <span style="color: #4f7cac;">KB</span>
+                                  </a>
+                                  <span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>
+                                </span>
+                              </li>
+                              <li style="font-size:12px;;">
+                                <span class="eckb-breadcrumb-link">
+                                  <a tabindex="0" href="https://www.wicketlabs.com/resources/knowledge-base/category/expert-guides/">
+                                    <span style="color: #4f7cac;">Expert Guides</span>
+                                  </a>
+                                  <span class="eckb-breadcrumb-link-icon ep_font_icon_arrow_carrot_right" aria-hidden="true"></span>
+                                </span>
+                              </li>
+                              <li style="font-size:12px;;">
+                                <span class="eckb-breadcrumb-link">
+                                  <span aria-current="page" style="color: #4f7cac;">How to Setup Firebase for OTT Video Services</span>
+                                </span>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="eckb-navigation-back  " style="margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px;">
+                          <div tabindex="0" class="eckb-navigation-button" style="padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; color: #4f7cac; background-color: #ffffff; font-size:16px;; border-radius: 3px; border-style: none; border-width: 1px; border-color: #ffffff;" onclick="history.go(-1);">&lt; Back</div>
+                        </div>
+                      </div>
+                      <div id="eckb-article-content-body">
+                        <div id="et-boc" class="et-boc">
+                          <div class="et-l et-l--post">
+                            <div class="et_builder_inner_content et_pb_gutters2">
+                              <div class="et_pb_section et_pb_section_0 et_section_regular et_pb_section_first">
+                                <div class="et_pb_row et_pb_row_0">
+                                  <div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                    <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+                                      <div class="et_pb_text_inner">
+                                        <h2>Overview</h2>
+                                        <p>Google has been making major changes to its Google Analytics product in recent months. In October 2019, they
+                                          <a href="https://support.google.com/firebase/answer/9167112?hl=en" target="_blank" rel="noopener noreferrer">started sunsetting mobile app reporting</a>&nbsp;using their Google Analytics SDK. This required companies wanting to collect usage data from their mobile apps to switch to Google’s successor service: Google Analytics for Firebase.
+                                        </p>
+                                        <p>In this article, we will demonstrate how to solve a particular use-case for video streaming services: how to leverage Google Analytics for Firebase to track the video playback events generated by your apps. The primary purpose is to track how popular the content is on your service – at a much deeper level than a simple view count.&nbsp; As a bonus, you will also be able to see how many users are watching content in near real-time.</p>
+                                        <p>This article is a follow-up to
+                                          <a href="https://www.wicketlabs.com/wicket-blog/how-setup-google-analytics-video-success/">How to Set up Google Analytics for Video Success</a>. While that article is still relevant for tracking video playback events from a website, this article is focused on playback events from apps.
+                                        </p>
+                                        <h2>Getting Started</h2>
+                                        <p>If you are in a position to start collecting analytics data from scratch, we recommend using Google’s new
+                                          <a href="https://www.blog.google/products/marketingplatform/analytics/new-way-unify-app-and-website-measurement-google-analytics/" target="_blank" rel="noopener noreferrer">App+Web property type</a>. This makes it possible to track your website and app traffic in one combined view in Google Analytics. Krista Seiden has written an excellent&nbsp;
+                                          <a href="https://www.kristaseiden.com/step-by-step-setting-up-an-app-web-property/">step-by-step guide for creating an App+Web property</a>&nbsp;on her blog. If creating an entirely new property is not an option for you, then you only need to create a new App property.
+                                        </p>
+                                        <h2>Developing for Video Events</h2>
+                                        <h3>Initial Setup</h3>
+                                        <p>You will need to update your apps to include the Firebase SDK. Google has
+                                          <a href="https://firebase.google.com/docs/analytics/get-started" target="_blank" rel="noopener noreferrer">quick start guides</a>&nbsp;to get you started. If more thorough step-by-step instructions would be helpful, Simo Ahava has written fantastic guides for&nbsp;
+                                          <a href="https://www.simoahava.com/analytics/android-quickstart-google-analytics-firebase-google-tag-manager/" target="_blank" rel="noopener noreferrer">Android</a> and
+                                          <a href="https://www.simoahava.com/analytics/ios-quickstart-google-analytics-firebase-tag-manager/" target="_blank" rel="noopener noreferrer">iOS</a>.
+                                        </p>
+                                        <h3>Video Playback Events</h3>
+                                        <p>Next you must update your video player to send events to Firebase when certain user playback events occur. First make sure to set a
+                                          <tt>userId</tt> so that all video playback events are tied to a specific user. This can either be an anonymous id (e.g.: if your site offers free videos without requiring registration), or it can be a subscriber id. Do not use an email address for
+                                          <tt>userId</tt>, as it constitutes PII and is against Google’s Terms of Service. For all video playback events, set an
+                                          <a href="https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event">Event Name</a> of “video_playback” and include the following
+                                          <a href="https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Param">Params</a> in the Event:
+                                        </p>
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <th>Param Names</th>
+                                              <th>Type</th>
+                                              <th>Param Values</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>video_event</td>
+                                              <td>String</td>
+                                              <td>The type of video playback event. See table below for the list of event types.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>video_id</td>
+                                              <td>String</td>
+                                              <td>Content ID.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>video_title</td>
+                                              <td>String</td>
+                                              <td>Title of the content.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>video_position</td>
+                                              <td>Int</td>
+                                              <td>The user’s current playback position, in seconds.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>video_duration</td>
+                                              <td>Int</td>
+                                              <td>The total duration of the content, in seconds.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>video_progress</td>
+                                              <td>Double</td>
+                                              <td>Video position divided by video duration.</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <p>Send events to Firebase when the following actions occur:</p>
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <th>Playback Event</th>
+                                              <th>Description</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>start</td>
+                                              <td>Sent once at the start of the video.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>pause</td>
+                                              <td>Sent when the user pauses the video.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>resume</td>
+                                              <td>Sent when the user resumes the video.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>rewind</td>
+                                              <td>Sent when the user rewinds the video.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>fastforward</td>
+                                              <td>Sent when the user fast-forwards the video.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>stop</td>
+                                              <td>Sent when the user stops the video.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>skip</td>
+                                              <td>Sent when the user skips to the next video in a playlist.</td>
+                                            </tr>
+                                            <tr>
+                                              <td>progress</td>
+                                              <td>
+                                                <p>Sent when the user reaches:</p>
+                                                <ul>
+                                                  <li>first 30 second marker into video</li>
+                                                  <li>10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% of total video duration</li>
+                                                </ul>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <h3>Android Sample Code</h3>
+                                        <p>This sample code demonstrates the different kinds of playback events that could be sent from the video player to Google Analytics for Firebase:</p>
+                                      </div>
+                                    </div>
+                                    <div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+                                      <div class="et_pb_text_inner">
+                                        <div class="codecolorer-container javascript geshi" style="overflow:auto;white-space:nowrap;width:100%;height:500px;">
+                                          <table cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                              <tr>
+                                                <td class="line-numbers">
+                                                  <div>1
+                                                    <br>2
+                                                    <br>3
+                                                    <br>4
+                                                    <br>5
+                                                    <br>6
+                                                    <br>7
+                                                    <br>8
+                                                    <br>9
+                                                    <br>10
+                                                    <br>11
+                                                    <br>12
+                                                    <br>13
+                                                    <br>14
+                                                    <br>15
+                                                    <br>16
+                                                    <br>17
+                                                    <br>18
+                                                    <br>19
+                                                    <br>20
+                                                    <br>21
+                                                    <br>22
+                                                    <br>23
+                                                    <br>24
+                                                    <br>25
+                                                    <br>26
+                                                    <br>27
+                                                    <br>28
+                                                    <br>29
+                                                    <br>30
+                                                    <br>31
+                                                    <br>32
+                                                    <br>33
+                                                    <br>34
+                                                    <br>35
+                                                    <br>36
+                                                    <br>37
+                                                    <br>38
+                                                    <br>39
+                                                    <br>40
+                                                    <br>41
+                                                    <br>42
+                                                    <br>43
+                                                    <br>44
+                                                    <br>45
+                                                    <br>46
+                                                    <br>47
+                                                    <br>48
+                                                    <br>49
+                                                    <br>50
+                                                    <br>51
+                                                    <br>52
+                                                    <br>53
+                                                    <br>54
+                                                    <br>55
+                                                    <br>56
+                                                    <br>57
+                                                    <br>58
+                                                    <br>59
+                                                    <br>60
+                                                    <br>61
+                                                    <br>62
+                                                    <br>63
+                                                    <br>64
+                                                    <br>65
+                                                    <br>66
+                                                    <br>67
+                                                    <br>68
+                                                    <br>69
+                                                    <br>70
+                                                    <br>71
+                                                    <br>72
+                                                    <br>73
+                                                    <br>74
+                                                    <br>75
+                                                    <br>76
+                                                    <br>77
+                                                    <br>78
+                                                    <br>79
+                                                    <br>80
+                                                    <br>81
+                                                    <br>82
+                                                    <br>83
+                                                    <br>84
+                                                    <br>85
+                                                    <br>86
+                                                    <br>87
+                                                    <br>88
+                                                    <br>89
+                                                    <br>90
+                                                    <br>91
+                                                    <br>92
+                                                    <br>93
+                                                    <br>94
+                                                    <br>95
+                                                    <br>96
+                                                    <br>97
+                                                    <br>98
+                                                    <br>99
+                                                    <br>100
+                                                    <br>101
+                                                    <br>102
+                                                    <br>103
+                                                    <br>
+                                                  </div>
+                                                </td>
+                                                <td>
+                                                  <div class="javascript codecolorer" style="white-space:nowrap">
+                                                    <span style="color: #FF0000;">class</span> MainActivity
+                                                    <span style="color: #339933;">:</span> AppCompatActivity
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <span style="color: #009900;">{</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp;private lateinit
+                                                    <span style="color: #000066; font-weight: bold;">var</span> firebaseAnalytics
+                                                    <span style="color: #339933;">:</span> FirebaseAnalytics
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp;override fun onCreate
+                                                    <span style="color: #009900;">(</span>savedInstanceState
+                                                    <span style="color: #339933;">:</span> Bundle
+                                                    <span style="color: #339933;">?</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <span style="color: #009900;">{</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #FF0000;">super</span>.
+                                                    <span style="color: #660066;">onCreate</span>
+                                                    <span style="color: #009900;">(</span>savedInstanceState
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// firebase developer documentation</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/package-summary</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics
+                                                    <span style="color: #339933;">=</span> FirebaseAnalytics.
+                                                    <span style="color: #660066;">getInstance</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #000066; font-weight: bold;">this</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// set user id</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">setUserId</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"test_user_id"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">/** video playback events **/</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video start</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoStartBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStartBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"start"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStartBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStartBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStartBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">0</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStartBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStartBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">0.0</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoStartBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video pause</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoPauseBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoPauseBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"pause"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoPauseBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoPauseBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoPauseBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">654</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoPauseBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoPauseBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">10.0</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoPauseBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video resume</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoResumeBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoResumeBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"resume"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoResumeBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoResumeBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoResumeBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">654</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoResumeBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoResumeBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">10.0</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoResumeBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video rewind</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoRewindBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoRewindBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"rewind"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoRewindBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoRewindBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoRewindBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">327</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoRewindBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoRewindBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">5.0</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoRewindBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video fast-forward</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoFastForwardBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoFastForwardBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"fastforward"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoFastForwardBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoFastForwardBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoFastForwardBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">4905</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoFastForwardBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoFastForwardBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">75.0</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoFastForwardBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video stop</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoStopBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStopBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"stop"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStopBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStopBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStopBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6000</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStopBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoStopBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">91.74</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoStopBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video skip</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoSkipBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoSkipBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"skip"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoSkipBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoSkipBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoSkipBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6000</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoSkipBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoSkipBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">91.74</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoSkipBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// video progress</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// send progress events at:</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// - first 30 seconds reached</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <span style="color: #006600; font-style: italic;">// - 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% of video completion</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;val videoProgressBundle
+                                                    <span style="color: #339933;">=</span> Bundle
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoProgressBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_event"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"progress"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoProgressBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_id"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"tt7984734"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoProgressBundle.
+                                                    <span style="color: #660066;">putString</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_title"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #3366CC;">"The Lighthouse"</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoProgressBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_position"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">654</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoProgressBundle.
+                                                    <span style="color: #660066;">putInt</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_duration"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">6540</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;videoProgressBundle.
+                                                    <span style="color: #660066;">putDouble</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_progress"</span>
+                                                    <span style="color: #339933;">,</span>
+                                                    <span style="color: #CC0000;">10.0</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;firebaseAnalytics.
+                                                    <span style="color: #660066;">logEvent</span>
+                                                    <span style="color: #009900;">(</span>
+                                                    <span style="color: #3366CC;">"video_playback"</span>
+                                                    <span style="color: #339933;">,</span> videoProgressBundle
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    <br>
+                                                    &nbsp; &nbsp; &nbsp; &nbsp;setContentView
+                                                    <span style="color: #009900;">(</span>R.
+                                                    <span style="color: #660066;">layout</span>.
+                                                    <span style="color: #660066;">activity_main</span>
+                                                    <span style="color: #009900;">)</span>
+                                                    <br>
+                                                    &nbsp; &nbsp;
+                                                    <span style="color: #009900;">}</span>
+                                                    <br>
+                                                    <span style="color: #009900;">}</span>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+                                      <div class="et_pb_text_inner">
+                                        <h3>Debugging</h3>
+                                        <p>Firebase has a
+                                          <a href="https://firebase.google.com/docs/analytics/debugview" target="_blank" rel="noopener noreferrer">feature called DebugView</a>&nbsp;that makes testing very efficient. Once enabled, you will see an event stream delivered in near real-time in the Firebase Console. You will also be able to see all custom event parameters and values, which are otherwise not possible to see in the Firebase Console. We highly recommend using this feature to confirm that your events are firing at the correct times and with all of the correct values.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="et_pb_module et_pb_image et_pb_image_0">
+                                      <span class="et_pb_image_wrap has-box-shadow-overlay">
+                                        <div class="box-shadow-overlay"></div>
+                                        <img width="1000" height="520" src="//m2d8t6y5.stackpathcdn.com/wp-content/uploads/2020/01/firebase-debugging.gif" alt="" title="" class="wp-image-32359">
+                                      </span>
+                                    </div>
+                                    <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+                                      <div class="et_pb_text_inner">
+                                        <h2>Exporting with BigQuery</h2>
+                                        <p>There’s a new paradigm to access your raw data in Firebase versus Google Analytics. Google Analytics historically has offered a reporting API, whereas Firebase offers a database: Google BigQuery. There are a number of extra steps that you must follow to enable BigQuery for Firebase, the first of which is to upgrade to Firebase’s Blaze plan. This is a pay-as-you-go plan with a pleasant bonus: Google offers free usage quotas per month, so depending on the amount of traffic generated by your apps, you may end up paying little or nothing. You may wish to do more research on the&nbsp;
+                                          <a href="https://cloud.google.com/bigquery/pricing">pricing based on your expected usage</a>.
+                                        </p>
+                                        <p>Why would you want to set up raw data access in BigQuery?</p>
+                                        <ol>
+                                          <li>It enables quick, ad-hoc analysis of your data.</li>
+                                          <li>Certain data (like custom parameters) cannot be viewed in their entirety in the Firebase Console, whereas all data are made available in BigQuery. This makes access to the raw data essential for advanced users and third-party audience analytics platforms like the Wicket Scorecard, who rely on a complete dataset.</li>
+                                        </ol>
+                                        <p>We recommend that you enable the link with BigQuery as soon as possible, as the data only starts being delivered from the date that you enable the configuration. Data is not populated in BigQuery retroactively.</p>
+                                        <p>We again to turn to Simo Ahava for a
+                                          <a href="https://www.simoahava.com/analytics/enable-bigquery-export-google-analytics-app-web/" target="_blank" rel="noopener noreferrer">step-by-step guide to link BigQuery with Firebase</a>.
+                                        </p>
+                                        <p>We hope you found this guide helpful in setting up Firebase for Google Analytics.&nbsp;To learn more about how Wicket Labs can help set your video service&nbsp;up for success,&nbsp;
+                                          <a href="https://www.wicketlabs.com/contact-us/">contact us for a demo</a>&nbsp;of the Wicket Scorecard to see how we’re increasing audience lifetime value for our customers.
+                                        </p>
+                                        <p>&nbsp;</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="et_bloom_bottom_trigger"></span>
+                      </div>
+                      <div id="eckb-article-content-footer">
+                        <div class="eckb-tag-container">
+                          <span class="eckb-tag-description">Tags:</span>
+                          <ul class="eckb-tag-list">
+                            <li>
+                              <a href="https://www.wicketlabs.com/resources/knowledge-base/tag/business-intelligence/" rel="tag">business intelligence</a>
+                            </li>
+                            <li>
+                              <a href="https://www.wicketlabs.com/resources/knowledge-base/tag/client-services/" rel="tag">client services</a>
+                            </li>
+                            <li>
+                              <a href="https://www.wicketlabs.com/resources/knowledge-base/tag/firebase/" rel="tag">firebase</a>
+                            </li>
+                            <li>
+                              <a href="https://www.wicketlabs.com/resources/knowledge-base/tag/google-analytics/" rel="tag">google analytics</a>
+                            </li>
+                            <li>
+                              <a href="https://www.wicketlabs.com/resources/knowledge-base/tag/integrated-data/" rel="tag">integrated data</a>
+                            </li>
+                            <li>
+                              <a href="https://www.wicketlabs.com/resources/knowledge-base/tag/svod/" rel="tag">svod</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- /#eckb-article-content -->
+                    <div id="eckb-article-right-sidebar"></div>
+                  </div>
+                  <!-- /#eckb-article-body -->
+                  <div id="eckb-article-footer"></div>
+                </div>
+                <!-- /#eckb-article-page-container -->
+                <style id="eckb-article-print-styles">
+@media print {
+@page {
+margin: 10px 10px 10px 10px!important;
+}
+}
+                </style>
+                <style id="eckb-article-styles" type="text/css">#eckb-article-body .eckb-article-title {												}</style>
+                <p>
+                  &nbsp;
+                </p>
+              </div>
+              <!-- .entry-content -->
+              <div class="et_post_meta_wrapper"></div>
+              <!-- .et_post_meta_wrapper -->
+            </article>
+            <!-- .et_pb_post -->
+          </div>
+          <!-- #left-area -->
+        </div>
+        <!-- #content-area -->
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- #main-content -->
+    <!-- #main-footer -->
+  </div>
+  <!-- #et-main-area -->
+</div>
